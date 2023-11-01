@@ -11,7 +11,7 @@ export default class MapComponent extends Component {
     let dimensions = `${width}x${height}`;
     let accessToken = `access_token=${this.token}`;
 
-    return `${MAPBOX_API}/${coordinates}/${dimensions}@2x?${accessToken}`
+    return `${MAPBOX_API}/${coordinates}/${dimensions}@2x?${accessToken}`;
   }
 
   get token() {

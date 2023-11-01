@@ -143,12 +143,12 @@ module('Integration | Component | map', function (hooks) {
 
     assert.ok(
       img.src.includes('-122.4194,37.7749,10'),
-      'the src should include the lng,lat,zoom parameter'
+      'the src should include the lng,lat,zoom parameter',
     );
 
     assert.ok(
       img.src.includes('150x120@2x'),
-      'the src should include the width,height and @2x parameter'
+      'the src should include the width,height and @2x parameter',
     );
 
     this.setProperties({
@@ -159,12 +159,12 @@ module('Integration | Component | map', function (hooks) {
 
     assert.ok(
       img.src.includes('-122.4194,37.7749,12'),
-      'the src should include the lng,lat,zoom parameter'
+      'the src should include the lng,lat,zoom parameter',
     );
 
     assert.ok(
       img.src.includes('300x200@2x'),
-      'the src should include the width,height and @2x parameter'
+      'the src should include the width,height and @2x parameter',
     );
 
     this.setProperties({
@@ -174,15 +174,14 @@ module('Integration | Component | map', function (hooks) {
 
     assert.ok(
       img.src.includes('-122.3321,47.6062,12'),
-      'the src should include the lng,lat,zoom parameter'
+      'the src should include the lng,lat,zoom parameter',
     );
 
     assert.ok(
       img.src.includes('300x200@2x'),
-      'the src should include the width,height and @2x parameter'
+      'the src should include the width,height and @2x parameter',
     );
   });
-
 
   test('the src, width and height attributes cannot be overridden', async function (assert) {
     await render(hbs`<Map
